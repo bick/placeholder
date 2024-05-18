@@ -5,7 +5,7 @@ interface PlaceholderProps {
     height: number;
 }
 
-const Placeholder: React.FC<PlaceholderProps> = ({width, height}) => {
+export const Placeholder: React.FC<PlaceholderProps> = ({width, height}) => {
     const placeholderStyle = {
         width: `${width}px`,
         height: `${height}px`,
@@ -24,5 +24,3 @@ const Placeholder: React.FC<PlaceholderProps> = ({width, height}) => {
         </div>
     );
 };
-
-export default Placeholder;
