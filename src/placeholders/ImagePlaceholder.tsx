@@ -1,4 +1,5 @@
 import React, {useEffect, useRef} from 'react';
+import ClientOnly from '../clientOnly';
 
 interface ImagePlaceholderProps {
     width?: number;
@@ -25,7 +26,11 @@ const ImagePlaceholder: React.FC<ImagePlaceholderProps> = ({width = 100, height 
         }
     }, [width, height]);
 
-    return <canvas ref={canvasRef} width={width} height={height}></canvas>;
+    return (
+        <ClientOnly>
+            <canvas ref={canvasRef} width={width} height={height}></canvas>
+        </ClientOnly>
+    );
 };
 
 export default ImagePlaceholder;

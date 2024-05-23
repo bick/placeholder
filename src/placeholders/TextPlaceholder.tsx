@@ -1,4 +1,5 @@
 import React from 'react';
+import ClientOnly from '../ClientOnly';
 
 interface TextPlaceholderProps {
     length?: number;
@@ -14,7 +15,11 @@ const loremIpsum = (length: number): string => {
 };
 
 const TextPlaceholder: React.FC<TextPlaceholderProps> = ({length = 64}) => {
-    return <div>{loremIpsum(length)}</div>;
+    return (
+        <ClientOnly>
+            <div>{loremIpsum(length)}</div>
+        </ClientOnly>
+    );
 };
 
 export default TextPlaceholder;
