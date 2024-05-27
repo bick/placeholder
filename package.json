@@ -2,7 +2,8 @@
   "name": "placeholder",
   "version": "1.1.0",
   "author": "Owen Bick <owenbick.com>",
-  "homepage": "https://github.com/bick/placeholder#readme",
+  "repository": "https://github.com/bick/placeholder",
+  "homepage": "https://placeholerjs.com",
   "bugs": {
     "url": "https://github.com/bick/placeholder/issues"
   },
