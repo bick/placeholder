@@ -1,6 +1,6 @@
 {
   "name": "placeholder",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "author": "Owen Bick <owenbick.com>",
   "homepage": "https://github.com/bick/placeholder#readme",
   "bugs": {
@@ -19,15 +19,11 @@
     "dummy"
   ],
   "license": "MIT",
-  "description": "Ridiculously simple and lightweight placeholders",
+  "description": "Ridiculously simple and lightweight placeholders.",
   "devDependencies": {
     "@types/node": "^20.12.12",
     "@types/react": "^18.3.2",
     "typescript": "^5.4.5"
-  },
-  "dependencies": {
-    "react": "^18.3.1",
-    "react-dom": "^18.3.1"
   },
   "files": [
     "dist"
