@@ -1,6 +1,6 @@
 {
   "name": "placeholder",
-  "version": "1.1.1",
+  "version": "1.2.0",
   "author": "Owen Bick <owenbick.com>",
   "repository": "https://github.com/bick/placeholder",
   "homepage": "https://placeholderjs.com",
@@ -22,9 +22,13 @@
   "license": "MIT",
   "description": "Ridiculously simple and lightweight placeholders.",
   "devDependencies": {
+    "@types/react": "^18.3.3",
     "typescript": "^5.4.5"
   },
   "files": [
     "dist"
-  ]
+  ],
+  "dependencies": {
+    "react": "^18.3.1"
+  }
 }
