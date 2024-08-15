@@ -14,20 +14,12 @@ A simple image placeholder for JavaScript.
 ### NextJS Example
 
 ```
-import Image from "next/image"; // Import the NextJS image component
+import { Placeholder } from "placeholder"; // Import the NextJS image component
 
-<Image src="https://placeholderjs.com/500x500" alt="500x500 placeholder" width={500} height={500} />
-```
-
-### Make sure to add Plaeholder.js to config
-```
-const nextConfig = {
-  images: {
-    domains: ['placeholderjs.com'], // Add allowed image source
-  },
-};
+<Placeholder width="500" height="500" />
 ```
 
 TODO:
 - ~~Add support for text~~
-- Add placeholder text functionality
+- ~~Add text color options~~
+- ~~Add background color options~~
