@@ -1,5 +1,11 @@
 # PlaceholderJS
+
 Ridiculously Simple and Lightweight Placeholders
+
+![npm](https://img.shields.io/npm/v/placeholder)
+![npm downloads](https://img.shields.io/npm/dm/placeholder)
+![bundle size](https://img.shields.io/bundlephobia/min/placeholder)
+![license](https://img.shields.io/npm/l/placeholder)
 
 ## NPM
 
@@ -118,9 +124,3 @@ Since we can't use `#` for the color code, use an underscore `_` before the HEX 
 ```
 https://placeholderjs.com/500x500&background=_000
 ```
-
-TODO:
-
-- ~~Add support for text~~
-- ~~Add text color options~~
-- ~~Add background color options~~
