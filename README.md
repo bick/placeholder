@@ -11,11 +11,17 @@ Ridiculously Simple and Lightweight Placeholders
 
 To use PlaceholderJS with React or any React framework, simply install via NPM or your preferred package manager:
 
-```npm i placeholder```
+```shell
+npm i placeholder
+```
 
-```yarn add placeholder```
+```shell
+yarn add placeholder
+```
 
-```pnpm add placeholder```
+```shell
+pnpm add placeholder
+```
 
 Next, import the package:
 
