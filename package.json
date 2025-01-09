@@ -22,8 +22,8 @@
   "license": "MIT",
   "description": "Ridiculously simple and lightweight placeholders.",
   "devDependencies": {
-    "@types/react": "^18.3.3",
-    "typescript": "^5.4.5"
+    "@types/react": "^18.3.18",
+    "typescript": "^5.7.3"
   },
   "files": [
     "dist"
