@@ -79,6 +79,16 @@ white). Example:
 <Placeholder width="500" height="500" background="#000"/>
 ```
 
+### Font Size
+
+**Optional**
+
+Override the default font size by adding `fontSize=` (in pixels) to the URL. For example, to force the text to be 40px:
+
+```jsx
+<Placeholder width="500" height="500" fontSize="40"/>
+```
+
 ## CDN
 
 To use PlaceholderJS via the CDN for simplicity and/or compatibility with non-JS tools, you can use the scheme:
