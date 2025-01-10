@@ -130,3 +130,13 @@ Since we can't use `#` for the color code, use an underscore `_` before the HEX 
 ```
 https://placeholderjs.com/500x500&background=_000
 ```
+
+### Font Size
+
+**Optional**
+
+Override the default font size by adding `fontsize=` (in pixels) to the URL. For example, to force the text to be 40px:
+
+```
+https://placeholderjs.com/500x500&text=Hello+World!&fontsize=40
+```
