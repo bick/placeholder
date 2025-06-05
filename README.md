@@ -1,152 +1,84 @@
-# PlaceholderJS
+# Turborepo starter
 
-Ridiculously Simple and Lightweight Placeholders
+This Turborepo starter is maintained by the Turborepo core team.
 
-![npm](https://img.shields.io/npm/v/placeholder)
-![npm downloads](https://img.shields.io/npm/dm/placeholder)
-![bundle size](https://img.shields.io/bundlephobia/min/placeholder)
-![license](https://img.shields.io/npm/l/placeholder)
+## Using this example
 
-## NPM
+Run the following command:
 
-To use PlaceholderJS with React or any React framework, simply install via NPM or your preferred package manager:
-
-```shell
-npm i placeholder
+```sh
+npx create-turbo@latest
 ```
 
-```shell
-yarn add placeholder
-```
+## What's inside?
 
-```shell
-pnpm add placeholder
-```
+This Turborepo includes the following packages/apps:
 
-Next, import the package:
+### Apps and Packages
 
-```jsx
-import {Placeholder} from 'placeholder';
-```
+- `docs`: a [Next.js](https://nextjs.org/) app
+- `web`: another [Next.js](https://nextjs.org/) app
+- `@repo/ui`: a stub React component library shared by both `web` and `docs` applications
+- `@repo/eslint-config`: `eslint` configurations (includes `eslint-config-next` and `eslint-config-prettier`)
+- `@repo/typescript-config`: `tsconfig.json`s used throughout the monorepo
 
-### NextJS Example
+Each package/app is 100% [TypeScript](https://www.typescriptlang.org/).
 
-```
-import { Placeholder } from "placeholder";
+### Utilities
 
-<Placeholder width="500" height="500" />
-```
+This Turborepo has some additional tools already setup for you:
 
-### Size
+- [TypeScript](https://www.typescriptlang.org/) for static type checking
+- [ESLint](https://eslint.org/) for code linting
+- [Prettier](https://prettier.io) for code formatting
 
-**Required**
+### Build
 
-Specify the size of the placeholder image by adding the width and height to the component. Example:
-
-```jsx
-<Placeholder width="500" height="500"/>
-```
-
-### Text
-
-**Optional**
-
-Specify custom text in the placeholder image by adding your text. Example:
-
-```jsx
-<Placeholder width="500" height="500" text="Hello World!"/>
-```
-
-### Text Color
-
-**Optional**
-
-Specify the text color by adding `color=` to the component. We support HEX values or named values (e.g., white).
-Example:
-
-```jsx
-<Placeholder width="500" height="500" text="Hello World!" color="#fff"/>
-```
-
-### Background Color
-
-**Optional**
-
-Specify the background color by adding `background=` to the component. We support HEX values or named values (e.g.,
-white). Example:
-
-```jsx
-<Placeholder width="500" height="500" background="#000"/>
-```
-
-### Font Size
-
-**Optional**
-
-Override the default font size by adding `fontSize=` (in pixels) to the URL. For example, to force the text to be 40px:
-
-```jsx
-<Placeholder width="500" height="500" fontSize="40"/>
-```
-
-## CDN
-
-To use PlaceholderJS via the CDN for simplicity and/or compatibility with non-JS tools, you can use the scheme:
+To build all apps and packages, run the following command:
 
 ```
-https://placeholderjs.com/HEIGHTxWIDTH
+cd my-turborepo
+pnpm build
 ```
 
-All image placeholders **must** have a height and width defined.
+### Develop
 
-### Size
-
-**Required**
-
-Specify the size of the placeholder image by adding the width and height to the URL. Example:
+To develop all apps and packages, run the following command:
 
 ```
-https://placeholderjs.com/500x500
+cd my-turborepo
+pnpm dev
 ```
 
-### Text
+### Remote Caching
 
-**Optional**
+> [!TIP]
+> Vercel Remote Cache is free for all plans. Get started today at [vercel.com](https://vercel.com/signup?/signup?utm_source=remote-cache-sdk&utm_campaign=free_remote_cache).
 
-Specify custom text in the placeholder image by adding your text to the URL. Use a `+` character for spaces. Example:
+Turborepo can use a technique known as [Remote Caching](https://turborepo.com/docs/core-concepts/remote-caching) to share cache artifacts across machines, enabling you to share build caches with your team and CI/CD pipelines.
 
-```
-https://placeholderjs.com/500x500&text=Hello+World!
-```
-
-### Text Color
-
-**Optional**
-
-Specify the text color by adding `color=` to the URL. We support HEX values or named values (e.g., white). Since we
-can't use `#` for the color code, use an underscore `_` before the HEX code. Example:
+By default, Turborepo will cache locally. To enable Remote Caching you will need an account with Vercel. If you don't have an account you can [create one](https://vercel.com/signup?utm_source=turborepo-examples), then enter the following commands:
 
 ```
-https://placeholderjs.com/500x500&text=Hello+World!&color=_fff
+cd my-turborepo
+npx turbo login
 ```
 
-### Background Color
+This will authenticate the Turborepo CLI with your [Vercel account](https://vercel.com/docs/concepts/personal-accounts/overview).
 
-**Optional**
-
-Specify the background color by adding `background=` to the URL. We support HEX values or named values (e.g., white).
-Since we can't use `#` for the color code, use an underscore `_` before the HEX code. Example:
+Next, you can link your Turborepo to your Remote Cache by running the following command from the root of your Turborepo:
 
 ```
-https://placeholderjs.com/500x500&background=_000
+npx turbo link
 ```
 
-### Font Size
+## Useful Links
 
-**Optional**
+Learn more about the power of Turborepo:
 
-Override the default font size by adding `fontSize=` (in pixels) to the URL. For example, to force the text to be 40px:
-
-```
-https://placeholderjs.com/500x500&text=Hello+World!&fontsize=40
-```
+- [Tasks](https://turborepo.com/docs/crafting-your-repository/running-tasks)
+- [Caching](https://turborepo.com/docs/crafting-your-repository/caching)
+- [Remote Caching](https://turborepo.com/docs/core-concepts/remote-caching)
+- [Filtering](https://turborepo.com/docs/crafting-your-repository/running-tasks#using-filters)
+- [Configuration Options](https://turborepo.com/docs/reference/configuration)
+- [CLI Usage](https://turborepo.com/docs/reference/command-line-reference)
