@@ -1,0 +1,34 @@
+{
+  "name": "placeholder",
+  "version": "1.2.3",
+  "author": "Owen Bick <owenbick.com>",
+  "repository": "https://github.com/bick/placeholder",
+  "homepage": "https://placeholderjs.com",
+  "bugs": {
+    "url": "https://github.com/bick/placeholder/issues"
+  },
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc"
+  },
+  "keywords": [
+    "placeholder",
+    "placeholders",
+    "fake images",
+    "dummy"
+  ],
+  "license": "MIT",
+  "description": "Ridiculously simple and lightweight placeholders.",
+  "devDependencies": {
+    "@types/react": "^18.3.18",
+    "typescript": "^5.7.3"
+  },
+  "files": [
+    "dist"
+  ],
+  "dependencies": {
+    "react": "^18.3.1"
+  }
+}
