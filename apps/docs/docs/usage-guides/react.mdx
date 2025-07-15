@@ -1,0 +1,472 @@
+---
+sidebar_position: 2
+---
+
+# React Usage
+
+import { Placeholder } from 'placeholder';
+
+Use PlaceholderJS as a React component with full TypeScript support and seamless integration into your React applications.
+
+## Installation
+
+First, install the package:
+
+```bash
+npm install placeholder
+```
+
+## Basic Import
+
+```jsx
+import { Placeholder } from 'placeholder';
+```
+
+## Basic Usage
+
+### Required Props
+
+Width and height are required:
+
+```jsx
+<Placeholder width="300" height="200" />
+```
+
+**Result:**
+
+<Placeholder width="300" height="200" />
+
+## Text Prop
+
+Add custom text to your placeholder:
+
+```jsx
+<Placeholder width="400" height="250" text="Hello React!" />
+```
+
+**Result:**
+
+<Placeholder width="400" height="250" text="Hello React!" />
+
+### Text Guidelines
+
+- Use regular strings (no need for `+` like CDN)
+- Text automatically scales with component size
+- Keep text concise for better readability
+
+## Color Props
+
+### Text Color
+
+```jsx
+<Placeholder 
+  width="350" 
+  height="200" 
+  text="Red Text" 
+  color="#FF0000" 
+/>
+```
+
+**Result:**
+
+<Placeholder width="350" height="200" text="Red Text" color="#FF0000" />
+
+### Background Color
+
+```jsx
+<Placeholder 
+  width="350" 
+  height="200" 
+  text="Blue Background" 
+  background="#0066CC" 
+/>
+```
+
+**Result:**
+
+<Placeholder width="350" height="200" text="Blue Background" background="#0066CC" />
+
+### Combined Colors
+
+```jsx
+<Placeholder 
+  width="350" 
+  height="200" 
+  text="Custom Colors" 
+  color="#FFFFFF" 
+  background="#3B82F6" 
+/>
+```
+
+**Result:**
+
+<Placeholder width="350" height="200" text="Custom Colors" color="#FFFFFF" background="#3B82F6" />
+
+## Font Size
+
+Override the default font size:
+
+```jsx
+<Placeholder 
+  width="400" 
+  height="200" 
+  text="Large Text" 
+  fontSize={48} 
+/>
+```
+
+**Result:**
+
+<Placeholder width="400" height="200" text="Large Text" fontSize={48} />
+
+## Color Formats
+
+### Hex Colors
+- **React Format**: Standard hex format `#FF0000`
+- **Example**: `color="#FF0000"`, `background="#0066CC"`
+
+### Named Colors
+- **Supported**: `white`, `black`, `red`, `blue`, `green`, `yellow`, `purple`, `orange`, `pink`, `gray`
+- **Example**: `color="white"`, `background="black"`
+
+## Styling Props
+
+### CSS Classes
+
+```jsx
+<Placeholder 
+  width="300" 
+  height="200" 
+  text="Styled" 
+  className="border rounded-lg shadow-md" 
+/>
+```
+
+**Result:**
+
+<Placeholder width="300" height="200" text="Styled" className="border rounded-lg shadow-md" />
+
+### Inline Styles
+
+```jsx
+<Placeholder 
+  width="300" 
+  height="200" 
+  text="Styled" 
+  style={{ 
+    border: '2px solid #3B82F6', 
+    borderRadius: '8px',
+    boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)'
+  }} 
+/>
+```
+
+**Result:**
+
+<Placeholder 
+  width="300" 
+  height="200" 
+  text="Styled" 
+  style={{ 
+    border: '2px solid #3B82F6', 
+    borderRadius: '8px',
+    boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)'
+  }} 
+/>
+
+## Practical Examples
+
+### Profile Pictures
+
+```jsx
+// Small avatar
+<Placeholder 
+  width="64" 
+  height="64" 
+  text="JD" 
+  background="#6B7280" 
+  color="#FFFFFF"
+  fontSize={20}
+  className="rounded-full"
+/>
+
+// Medium profile picture
+<Placeholder 
+  width="128" 
+  height="128" 
+  text="User" 
+  background="#3B82F6" 
+  color="#FFFFFF"
+  fontSize={24}
+  className="rounded-lg"
+/>
+```
+
+**Results:**
+
+<div style={{ display: 'flex', gap: '1rem', alignItems: 'center' }}>
+  <Placeholder 
+    width="64" 
+    height="64" 
+    text="JD" 
+    background="#6B7280" 
+    color="#FFFFFF"
+    fontSize={20}
+    className="rounded-full"
+  />
+  <Placeholder 
+    width="128" 
+    height="128" 
+    text="User" 
+    background="#3B82F6" 
+    color="#FFFFFF"
+    fontSize={24}
+    className="rounded-lg"
+  />
+</div>
+
+### Card Components
+
+```jsx
+function ProductCard() {
+  return (
+    <div className="bg-white rounded-lg shadow p-4">
+      <Placeholder 
+        width="300" 
+        height="200" 
+        text="Product Image" 
+        background="#F3F4F6" 
+        color="#6B7280"
+        className="rounded mb-4"
+      />
+      <h3 className="text-lg font-semibold">Product Title</h3>
+      <p className="text-gray-600">Product description here...</p>
+    </div>
+  );
+}
+```
+
+**Result:**
+
+<div className="bg-white rounded-lg shadow p-4 max-w-sm">
+  <Placeholder 
+    width="300" 
+    height="200" 
+    text="Product Image" 
+    background="#F3F4F6" 
+    color="#6B7280"
+    className="rounded mb-4"
+  />
+  <h3 className="text-lg font-semibold">Product Title</h3>
+  <p className="text-gray-600">Product description here...</p>
+</div>
+
+### Gallery Grid
+
+```jsx
+function ImageGallery() {
+  const images = [
+    { text: "Photo 1", bg: "#EF4444" },
+    { text: "Photo 2", bg: "#3B82F6" },
+    { text: "Photo 3", bg: "#10B981" },
+    { text: "Photo 4", bg: "#F59E0B" },
+  ];
+
+  return (
+    <div className="grid grid-cols-2 gap-4">
+      {images.map((img, index) => (
+        <Placeholder 
+          key={index}
+          width="200" 
+          height="150" 
+          text={img.text} 
+          background={img.bg}
+          color="#FFFFFF"
+          className="rounded"
+        />
+      ))}
+    </div>
+  );
+}
+```
+
+**Result:**
+
+<div className="grid grid-cols-2 gap-4 max-w-md">
+  <Placeholder width="200" height="150" text="Photo 1" background="#EF4444" color="#FFFFFF" className="rounded" />
+  <Placeholder width="200" height="150" text="Photo 2" background="#3B82F6" color="#FFFFFF" className="rounded" />
+  <Placeholder width="200" height="150" text="Photo 3" background="#10B981" color="#FFFFFF" className="rounded" />
+  <Placeholder width="200" height="150" text="Photo 4" background="#F59E0B" color="#FFFFFF" className="rounded" />
+</div>
+
+## TypeScript Support
+
+PlaceholderJS includes full TypeScript definitions:
+
+```tsx
+import { Placeholder } from 'placeholder';
+
+interface PlaceholderProps {
+  width: string;
+  height: string;
+  text?: string;
+  color?: string;
+  background?: string;
+  fontSize?: number;
+  className?: string;
+  style?: React.CSSProperties;
+}
+
+function MyComponent(): JSX.Element {
+  return (
+    <Placeholder 
+      width="300" 
+      height="200" 
+      text="TypeScript!" 
+      color="#FFFFFF"
+      background="#3B82F6"
+    />
+  );
+}
+```
+
+## Integration with Frameworks
+
+### Next.js
+
+```jsx
+import { Placeholder } from 'placeholder';
+
+export default function HomePage() {
+  return (
+    <div>
+      <h1>Welcome to Next.js</h1>
+      <Placeholder width="600" height="300" text="Hero Image" />
+    </div>
+  );
+}
+```
+
+### Create React App
+
+```jsx
+import React from 'react';
+import { Placeholder } from 'placeholder';
+
+function App() {
+  return (
+    <div className="App">
+      <header className="App-header">
+        <Placeholder width="300" height="200" text="React App" />
+      </header>
+    </div>
+  );
+}
+
+export default App;
+```
+
+### Remix
+
+```jsx
+import { Placeholder } from 'placeholder';
+
+export default function Index() {
+  return (
+    <div>
+      <h1>Welcome to Remix</h1>
+      <Placeholder width="500" height="250" text="Remix App" />
+    </div>
+  );
+}
+```
+
+## Best Practices
+
+### Performance
+- **Component Reuse**: Create wrapper components for common placeholder patterns
+- **Memoization**: Use `React.memo()` for frequently rendered placeholders
+- **Lazy Loading**: Consider lazy loading for off-screen placeholders
+
+### Accessibility
+- **Alt Text**: The component automatically provides appropriate alt text
+- **Color Contrast**: Ensure sufficient contrast between text and background
+- **Screen Readers**: Meaningful text helps screen reader users
+
+### State Management
+
+```jsx
+function DynamicPlaceholder() {
+  const [size, setSize] = useState({ width: "300", height: "200" });
+  const [text, setText] = useState("Dynamic");
+
+  return (
+    <div>
+      <Placeholder 
+        width={size.width} 
+        height={size.height} 
+        text={text} 
+      />
+      <button onClick={() => setText("Updated!")}>
+        Update Text
+      </button>
+    </div>
+  );
+}
+```
+
+## Common Patterns
+
+### Loading States
+
+```jsx
+function ImageWithPlaceholder({ src, alt, width, height }) {
+  const [loaded, setLoaded] = useState(false);
+
+  return (
+    <div style={{ position: 'relative' }}>
+      {!loaded && (
+        <Placeholder 
+          width={width} 
+          height={height} 
+          text="Loading..." 
+          background="#F3F4F6"
+        />
+      )}
+      <img 
+        src={src} 
+        alt={alt}
+        onLoad={() => setLoaded(true)}
+        style={{ 
+          display: loaded ? 'block' : 'none',
+          width,
+          height 
+        }}
+      />
+    </div>
+  );
+}
+```
+
+### Responsive Placeholders
+
+```jsx
+function ResponsivePlaceholder() {
+  return (
+    <div className="w-full max-w-md">
+      <Placeholder 
+        width="100%" 
+        height="200" 
+        text="Responsive" 
+        style={{ width: '100%', height: 'auto' }}
+      />
+    </div>
+  );
+}
+```
+
+## Next Steps
+
+- **[Examples](/docs/usage-guides/examples)** - More advanced usage examples
+- **[API Reference](/docs/api-reference/parameters)** - Complete props documentation
+- **[TypeScript Types](/docs/api-reference/typescript)** - Type definitions reference 

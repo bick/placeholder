@@ -7,9 +7,6 @@
     <list default="true" id="c5da9623-12ff-4c2a-a63e-d5c401b0eebf" name="Changes" comment="2.0 initial commit">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/apps/docs/docusaurus.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/docs/docusaurus.config.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/web/app/[placeholder]/route.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/web/app/[placeholder]/route.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/web/next.config.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/apps/web/next.config.mjs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vercel.json" beforeDir="false" afterPath="$PROJECT_DIR$/vercel.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,7 +53,7 @@
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;/Users/bick/GitHub/placeholder/packages/eslint-config/node_modules/typescript/lib&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/Users/bick/GitHub/placeholder/packages/placeholder/node_modules/typescript/lib&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
@@ -110,7 +107,15 @@
       <option name="project" value="LOCAL" />
       <updated>1752610995303</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="2.0 initial commit">
+      <option name="closed" value="true" />
+      <created>1752612042354</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1752612042354</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

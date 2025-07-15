@@ -1,0 +1,160 @@
+---
+sidebar_position: 3
+---
+
+# Quick Start
+
+import { Placeholder } from 'placeholder';
+
+Get up and running with PlaceholderJS in under 5 minutes.
+
+## Your First Placeholder
+
+### CDN Method
+
+The fastest way to try PlaceholderJS is via CDN. Simply use a URL:
+
+```html
+<img src="https://placeholderjs.com/300x200" alt="My first placeholder" />
+```
+
+**Result:**
+
+![First placeholder](https://placeholderjs.com/300x200)
+
+### React Method
+
+If you've [installed the package](/docs/getting-started/installation), import and use the component:
+
+```jsx
+import { Placeholder } from 'placeholder';
+
+function MyComponent() {
+  return <Placeholder width="300" height="200" />;
+}
+```
+
+**Result:**
+
+<Placeholder width="300" height="200" />
+
+## Adding Custom Text
+
+### CDN
+
+```html
+<img src="https://placeholderjs.com/400x250&text=Hello+World!" alt="Custom text" />
+```
+
+**Result:**
+
+![Custom text placeholder](https://placeholderjs.com/400x250&text=Hello+World!)
+
+### React
+
+```jsx
+<Placeholder width="400" height="250" text="Hello World!" />
+```
+
+**Result:**
+
+<Placeholder width="400" height="250" text="Hello World!" />
+
+## Customizing Colors
+
+### CDN
+
+```html
+<img src="https://placeholderjs.com/350x200&text=Blue+Theme&color=_FFFFFF&background=_3B82F6" alt="Blue theme" />
+```
+
+**Result:**
+
+![Blue theme placeholder](https://placeholderjs.com/350x200&text=Blue+Theme&color=_FFFFFF&background=_3B82F6)
+
+### React
+
+```jsx
+<Placeholder 
+  width="350" 
+  height="200" 
+  text="Blue Theme" 
+  color="#FFFFFF" 
+  background="#3B82F6" 
+/>
+```
+
+**Result:**
+
+<Placeholder width="350" height="200" text="Blue Theme" color="#FFFFFF" background="#3B82F6" />
+
+## Common Use Cases
+
+### Profile Picture Placeholder
+
+```jsx
+<Placeholder 
+  width="80" 
+  height="80" 
+  text="JP" 
+  background="#6B7280" 
+  color="#FFFFFF"
+  fontSize={24}
+/>
+```
+
+**Result:**
+
+<Placeholder width="80" height="80" text="JP" background="#6B7280" color="#FFFFFF" fontSize={24} />
+
+### Card Image Placeholder
+
+```jsx
+<Placeholder 
+  width="300" 
+  height="180" 
+  text="Card Image" 
+  background="#F3F4F6" 
+  color="#6B7280"
+/>
+```
+
+**Result:**
+
+<Placeholder width="300" height="180" text="Card Image" background="#F3F4F6" color="#6B7280" />
+
+### Banner Placeholder
+
+```jsx
+<Placeholder 
+  width="600" 
+  height="200" 
+  text="Hero Banner" 
+  background="#1F2937" 
+  color="#FFFFFF"
+  fontSize={32}
+/>
+```
+
+**Result:**
+
+<Placeholder width="600" height="200" text="Hero Banner" background="#1F2937" color="#FFFFFF" fontSize={32} />
+
+## What's Next?
+
+Now that you've created your first placeholders, explore more features:
+
+### 📚 **Learn More**
+- **[CDN Usage Guide](/docs/usage-guides/cdn)** - Complete CDN parameter reference
+- **[React Usage Guide](/docs/usage-guides/react)** - All component props and features
+- **[Examples](/docs/usage-guides/examples)** - More advanced usage examples
+
+### 🔍 **Reference**
+- **[API Reference](/docs/api-reference/parameters)** - Complete parameter documentation
+- **[TypeScript Types](/docs/api-reference/typescript)** - Type definitions and interfaces
+- **[Error Handling](/docs/api-reference/errors)** - Common issues and solutions
+
+### 💡 **Tips**
+- Use descriptive text for better accessibility
+- Keep dimensions reasonable for optimal performance
+- Consider using consistent colors for your design system 

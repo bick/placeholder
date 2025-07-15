@@ -1,0 +1,145 @@
+---
+sidebar_position: 4
+---
+
+# React/NPM Usage
+
+import { Placeholder } from 'placeholder';
+
+To use PlaceholderJS with React or any React framework, simply install via NPM or your preferred package manager.
+
+## Installation
+
+```bash
+npm install placeholder
+# or
+yarn add placeholder
+# or
+pnpm add placeholder
+```
+
+## Import
+
+Next, import the package in your React component:
+
+```jsx
+import { Placeholder } from 'placeholder';
+```
+
+## Size
+
+:::info Required
+Width and height props are required for React usage.
+:::
+
+Specify the size of the placeholder image by adding the width and height to the component. Here is an example of how that works for a `500 x 500` image.
+
+```jsx
+<Placeholder width="500" height="500" />
+```
+
+**Example Result:**
+
+<Placeholder width="500" height="500" />
+
+## Text
+
+Specify custom text in the placeholder image by adding your text. Here is an example of how that works for `Hello World!`.
+
+```jsx
+<Placeholder width="500" height="500" text="Hello World!" />
+```
+
+**Example Result:**
+
+<Placeholder width="500" height="500" text="Hello World!" />
+
+## Text Color
+
+Specify the text color by adding `color=` to the component. For now, we only support HEX values or named values (e.g. white).
+
+```jsx
+<Placeholder 
+  width="500" 
+  height="500" 
+  text="Hello World!" 
+  color="#fff"
+/>
+```
+
+**Example Result:**
+
+<Placeholder width="500" height="500" text="Hello World!" color="#fff" />
+
+## Background Color
+
+Specify the background color by adding `background=` to the component. For now, we only support HEX values or named values (e.g. white).
+
+```jsx
+<Placeholder 
+  width="500" 
+  height="500" 
+  background="#000" 
+/>
+```
+
+**Example Result:**
+
+<Placeholder width="500" height="500" background="#000" />
+
+## Font Size
+
+Override the default font size by adding `fontSize=` to the component (in pixels). This ensures the text is displayed at the specified pixel size.
+
+```jsx
+<Placeholder 
+  width="500" 
+  height="500" 
+  text="Hello World!" 
+  fontSize={40}
+/>
+```
+
+**Example Result:**
+
+<Placeholder width="500" height="500" text="Hello World!" fontSize={40} />
+
+## Combining Properties
+
+You can combine multiple properties to create exactly the placeholder you need:
+
+```jsx
+<Placeholder 
+  width="600" 
+  height="400" 
+  text="My Custom Placeholder" 
+  color="#FFFFFF" 
+  background="#3B82F6" 
+  fontSize={32}
+/>
+```
+
+**Example Result:**
+
+<Placeholder width="600" height="400" text="My Custom Placeholder" color="#FFFFFF" background="#3B82F6" fontSize={32} />
+
+## TypeScript Support
+
+PlaceholderJS includes full TypeScript support out of the box. All props are properly typed for a great developer experience.
+
+```tsx
+import { Placeholder } from 'placeholder';
+
+interface PlaceholderProps {
+  width: string;
+  height: string;
+  text?: string;
+  color?: string;
+  background?: string;
+  fontSize?: number;
+}
+
+function MyComponent() {
+  return <Placeholder width="300" height="200" text="TypeScript!" />;
+}
+``` 
