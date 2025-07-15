@@ -1,0 +1,23 @@
+{
+  "buildCommand": "cd ../.. && npx turbo run build --filter=placeholderjs",
+  "outputDirectory": "apps/web/.next",
+  "installCommand": "cd ../.. && pnpm install",
+  "framework": "nextjs",
+  "rewrites": [
+    {
+      "source": "/docs/:path*",
+      "destination": "https://placeholder-docs.vercel.app/:path*"
+    }
+  ],
+  "headers": [
+    {
+      "source": "/docs/:path*",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "index, follow"
+        }
+      ]
+    }
+  ]
+} 

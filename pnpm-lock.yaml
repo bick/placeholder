@@ -7,6 +7,10 @@ settings:
 importers:
 
   .:
+    dependencies:
+      placeholder:
+        specifier: workspace:^
+        version: link:packages/placeholder
     devDependencies:
       '@changesets/cli':
         specifier: ^2.27.1
@@ -106,7 +110,7 @@ importers:
         specifier: ^10.8.0
         version: 10.9.3
       placeholder:
-        specifier: ^1.2.1
+        specifier: workspace:^
         version: link:../../packages/placeholder
       react:
         specifier: ^18

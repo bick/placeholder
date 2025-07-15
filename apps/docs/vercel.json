@@ -1,0 +1,6 @@
+{
+  "buildCommand": "cd ../.. && npx turbo run build --filter=@placeholder/docs",
+  "outputDirectory": "apps/docs/build",
+  "installCommand": "cd ../.. && pnpm install",
+  "framework": null
+} 

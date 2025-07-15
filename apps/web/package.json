@@ -23,7 +23,7 @@
     "next-nprogress-bar": "^2.3.12",
     "next-themes": "^0.3.0",
     "npm": "^10.8.0",
-    "placeholder": "^1.2.1",
+    "placeholder": "workspace:^",
     "react": "^18",
     "react-code-blocks": "^0.1.6",
     "react-dom": "^18",

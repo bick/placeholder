@@ -23,5 +23,8 @@
   "engines": {
     "node": ">=18"
   },
-  "name": "with-changesets"
+  "name": "with-changesets",
+  "dependencies": {
+    "placeholder": "workspace:^"
+  }
 }
