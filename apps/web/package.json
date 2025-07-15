@@ -4,7 +4,10 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
+    "dev:with-docs": "pnpm build:docs && next dev",
     "build": "next build",
+    "build:docs": "cd ../docs && pnpm build && cp -r build ../web/public/docs",
+    "clean:docs": "rm -rf public/docs",
     "start": "next start",
     "lint": "next lint"
   },

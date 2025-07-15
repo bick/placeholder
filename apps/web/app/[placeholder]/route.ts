@@ -13,6 +13,12 @@ export async function GET(request: NextRequest, {params}: { params: { placeholde
     try {
         // Example URL: /300x180&text=Hello&color=fff&background=000&fontsize=25
         const {placeholder} = params;
+        
+        // Reject routes that don't match placeholder pattern (like 'docs', 'api', etc.)
+        if (!placeholder.match(/^\d+x\d+/)) {
+            return NextResponse.json({error: 'Not a placeholder route'}, {status: 404});
+        }
+        
         const [dimensions, ...rest] = placeholder.split('&');
         const [widthStr, heightStr] = dimensions.split('x');
 
