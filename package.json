@@ -3,6 +3,9 @@
   "scripts": {
     "build": "turbo run build",
     "dev": "turbo run dev",
+    "dev:web": "turbo run dev --filter=placeholderjs",
+    "dev:docs": "turbo run dev --filter=@placeholder/docs",
+    "dev:both": "turbo run dev --parallel",
     "lint": "turbo run lint",
     "clean": "turbo run clean && rm -rf node_modules",
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",

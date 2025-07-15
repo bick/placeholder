@@ -1,0 +1,19 @@
+.layout {
+  animation: hello ease-out .75s;
+  width: 100%;
+  padding-block-start: 0;
+  padding-block-end: 0;
+  margin: 0 auto;
+}
+
+@keyframes hello {
+  0% {
+    opacity: 0;
+    transform: translateY(3px);
+  }
+
+  100% {
+    opacity: 100%;
+    transform: translateY(0px);
+  }
+}

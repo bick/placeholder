@@ -5,32 +5,43 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c5da9623-12ff-4c2a-a63e-d5c401b0eebf" name="Changes" comment="2.0 initial commit">
-      <change beforePath="$PROJECT_DIR$/apps/docs/.eslintrc.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/docs/next-env.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/docs/next.config.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/docs/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/docs/src/app/layout.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/docs/src/app/page.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/docs/tsconfig.json" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/web/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/web/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/web/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/web/app/[placeholder]/route.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/web/app/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/web/app/layout.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/web/app/page.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/web/components.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/web/components/footer.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/web/components/header.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/web/components/sidebar.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/web/components/ui/accordion.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/web/components/ui/badge.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/web/components/ui/button.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/web/components/ui/code.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/web/components/ui/dropdown-menu.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/web/components/ui/logo.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/web/components/ui/tabs.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/web/components/ui/toast.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/web/components/ui/toaster.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/web/components/ui/use-toast.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/web/lib/utils.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/web/next.config.mjs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/web/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/web/pnpm-lock.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/web/postcss.config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/web/public/.nojekyll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/web/public/background.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/web/public/sitemap.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/web/styles/globals.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/web/styles/globals.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/web/styles/layout.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/web/tailwind.config.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/web/tsconfig.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/docs/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/apps/docs/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/acme-core/.eslintrc.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/acme-core/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/acme-core/src/Button.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/acme-core/src/index.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/acme-core/tsconfig.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/acme-core/tsup.config.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/acme-tsconfig/base.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/acme-tsconfig/nextjs.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/acme-tsconfig/node14.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/acme-tsconfig/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/acme-tsconfig/react-library.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/acme-utils/.eslintrc.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/acme-utils/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/acme-utils/src/index.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/acme-utils/src/toSlug.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/acme-utils/src/useIsomorphicLayoutEffect.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/acme-utils/src/usePrevious.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/acme-utils/tsconfig.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/pnpm-lock.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pnpm-lock.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -72,7 +83,7 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;v2&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/bick/GitHub/placeholder&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/bick/GitHub/placeholder/apps/web&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -84,6 +95,7 @@
 }</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/apps/web" />
       <recent name="$PROJECT_DIR$/packages/placeholder" />
     </key>
     <key name="MoveFile.RECENT_KEYS">

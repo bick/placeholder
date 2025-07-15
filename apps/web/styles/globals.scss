@@ -1,0 +1,221 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer base {
+  :root {
+    --background: 240 10% 3.9%;
+    --foreground: 0 0% 98%;
+    --card: 240 10% 3.9%;
+    --card-foreground: 0 0% 98%;
+    --popover: 240 10% 3.9%;
+    --popover-foreground: 0 0% 98%;
+    --primary: 0 0% 98%;
+    --primary-foreground: 240 5.9% 10%;
+    --secondary: 240 3.7% 15.9%;
+    --secondary-foreground: 0 0% 98%;
+    --muted: 240 3.7% 15.9%;
+    --muted-foreground: 240 5% 64.9%;
+    --accent: 240 3.7% 15.9%;
+    --accent-foreground: 0 0% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 240 3.7% 15.9%;
+    --input: 240 3.7% 15.9%;
+    --ring: 240 4.9% 83.9%;
+    --radius: .5rem;
+  }
+
+  .dark {
+    --background: 240 10% 3.9%;
+    --foreground: 0 0% 98%;
+    --card: 240 10% 3.9%;
+    --card-foreground: 0 0% 98%;
+    --popover: 240 10% 3.9%;
+    --popover-foreground: 0 0% 98%;
+    --primary: 0 0% 98%;
+    --primary-foreground: 240 5.9% 10%;
+    --secondary: 240 3.7% 15.9%;
+    --secondary-foreground: 0 0% 98%;
+    --muted: 240 3.7% 15.9%;
+    --muted-foreground: 240 5% 64.9%;
+    --accent: 240 3.7% 15.9%;
+    --accent-foreground: 0 0% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 240 3.7% 15.9%;
+    --input: 240 3.7% 15.9%;
+    --ring: 240 4.9% 83.9%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 16px;
+  color: #fff;
+}
+
+a {
+  text-decoration: none;
+  max-width: fit-content;
+  color: #2997ff;
+  transition: 0.2s ease;
+
+  &:hover {
+    opacity: 0.75;
+  }
+
+  &:link[href^="https://"]:after {
+    font-size: 0.75rem;
+    font-weight: 500;
+    line-height: 1;
+    margin-left: 0.25rem;
+    content: "↗";
+    vertical-align: text-top;
+    opacity: 0.5;
+  }
+}
+
+.header {
+  .logo {
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.25rem;
+    margin: 0;
+  }
+
+  ul {
+    li {
+      display: flex;
+      align-items: center;
+
+      a {
+        font-weight: 500;
+        opacity: .75;
+        transition: opacity .2s ease;
+        color: #fff;
+        font-size: 15px;
+        text-decoration: none;
+        margin: 0 1rem;
+
+        &:hover {
+          opacity: 1;
+        }
+
+        &.social {
+          &:after {
+            display: none;
+            content: '';
+          }
+        }
+      }
+    }
+  }
+}
+
+#sidebar {
+  --tw-translate-x: -100%;
+
+  a {
+    color: white;
+  }
+}
+
+#menu-close-icon {
+  display: none;
+}
+
+#menu-open:checked ~ #sidebar {
+  --tw-translate-x: 0;
+}
+
+#menu-open:checked ~ * #mobile-menu-button {
+  background-color: rgba(31, 41, 55, var(--tw-bg-opacity));
+}
+
+#menu-open:checked ~ * #menu-open-icon {
+  display: none;
+}
+
+#menu-open:checked ~ * #menu-close-icon {
+  display: block;
+}
+
+@media (min-width: 768px) {
+  #sidebar {
+    --tw-translate-x: 0;
+  }
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 1;
+  margin-bottom: 2rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 1.5;
+  margin: 2rem 0 .5rem;
+}
+
+p {
+  line-height: 2;
+  margin: 1rem 0;
+}
+
+.hero {
+  padding: 7rem 0;
+  background-image: url('/background.svg');
+  background-size: cover;
+  background-position-y: 100%;
+  background-position-x: center;
+  background-repeat: no-repeat;
+}
+
+code {
+  font-size: 16px;
+}
+
+.code-container {
+  code {
+    white-space: pre-wrap !important;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    width: 100%;
+    color: black;
+  }
+}
+
+
+.container {
+  position: relative;
+}
+
+.border {
+  border: 1px solid rgba(255, 255, 255, .25);
+  transition: 0.2s ease;
+
+  &:hover {
+    border: 1px solid rgba(255, 255, 255, .35);
+  }
+}
