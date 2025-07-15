@@ -16,7 +16,7 @@ This Turborepo includes the following:
 
 ### Apps and Packages
 
-- `@acme/docs`: A placeholder documentation site powered by [Next.js](https://nextjs.org/)
+- `@placeholder/docs`: A placeholder documentation site powered by [Docusaurus](https://docusaurus.io/)
 - `@acme/core`: core React components
 - `@acme/utils`: shared React utilities
 - `@acme/tsconfig`: shared `tsconfig.json`s used throughout the monorepo

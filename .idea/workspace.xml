@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="c5da9623-12ff-4c2a-a63e-d5c401b0eebf" name="Changes" comment="2.0 initial commit">
+      <change beforePath="$PROJECT_DIR$/apps/docs/.eslintrc.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/docs/next-env.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/docs/next.config.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/docs/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/docs/src/app/layout.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/docs/src/app/page.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/docs/tsconfig.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/acme-core/.eslintrc.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/acme-core/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/acme-core/src/Button.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/acme-core/src/index.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/acme-core/tsconfig.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/acme-core/tsup.config.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/acme-tsconfig/base.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/acme-tsconfig/nextjs.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/acme-tsconfig/node14.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/acme-tsconfig/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/acme-tsconfig/react-library.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/acme-utils/.eslintrc.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/acme-utils/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/acme-utils/src/index.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/acme-utils/src/toSlug.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/acme-utils/src/useIsomorphicLayoutEffect.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/acme-utils/src/usePrevious.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/acme-utils/tsconfig.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pnpm-lock.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pnpm-lock.yaml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;bick&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/bick/placeholder.git&quot;,
+    &quot;accountId&quot;: &quot;19665868-a93c-4421-9784-1e1d8f355244&quot;
+  }
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 2
+}</component>
+  <component name="ProjectId" id="2y4CudQepeK0AyUBH6twObzfoxW" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;v2&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/bick/GitHub/placeholder&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/Users/bick/GitHub/placeholder/packages/eslint-config/node_modules/typescript/lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/packages/placeholder" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/apps/docs" />
+    </key>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-d6986cc7102b-09060db00ec0-JavaScript-WS-251.26927.40" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c5da9623-12ff-4c2a-a63e-d5c401b0eebf" name="Changes" comment="" />
+      <created>1749084682214</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1749084682214</updated>
+      <workItem from="1749084683276" duration="3270000" />
+      <workItem from="1752602993371" duration="3634000" />
+    </task>
+    <task id="LOCAL-00001" summary="2.0 initial commit">
+      <option name="closed" value="true" />
+      <created>1749093067859</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1749093067859</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="CHECK_NEW_TODO" value="false" />
+    <MESSAGE value="2.0 initial commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="2.0 initial commit" />
+  </component>
+</project>

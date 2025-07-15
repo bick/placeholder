@@ -1,0 +1,134 @@
+---
+sidebar_position: 2
+---
+
+# Placeholder Examples
+
+import { Placeholder } from 'placeholder';
+
+The Placeholder component makes it easy to generate placeholder images for your projects.
+
+## Basic Usage
+
+The simplest way to use the placeholder component is to provide width and height:
+
+```jsx
+import { Placeholder } from 'placeholder';
+
+<Placeholder width="300" height="200" />
+```
+
+<Placeholder width="300" height="200" />
+
+## With Custom Text
+
+Add custom text to your placeholder:
+
+```jsx
+<Placeholder width="400" height="300" text="Hello World!" />
+```
+
+<Placeholder width="400" height="300" text="Hello World!" />
+
+## Custom Colors
+
+Customize both text and background colors:
+
+```jsx
+<Placeholder 
+  width="350" 
+  height="250" 
+  text="Custom Colors" 
+  color="#ffffff" 
+  background="#3b82f6" 
+/>
+```
+
+<Placeholder width="350" height="250" text="Custom Colors" color="#ffffff" background="#3b82f6" />
+
+## Different Sizes
+
+Create placeholders of various sizes:
+
+```jsx
+<Placeholder width="150" height="150" text="Small" />
+<Placeholder width="300" height="200" text="Medium" />
+<Placeholder width="500" height="300" text="Large" />
+```
+
+<div style={{display: 'flex', gap: '1rem', flexWrap: 'wrap', alignItems: 'center'}}>
+  <Placeholder width="150" height="150" text="Small" />
+  <Placeholder width="300" height="200" text="Medium" />
+  <Placeholder width="500" height="300" text="Large" />
+</div>
+
+## Custom Font Size
+
+Override the default font size:
+
+```jsx
+<Placeholder 
+  width="400" 
+  height="200" 
+  text="Big Text" 
+  fontSize="32" 
+/>
+```
+
+<Placeholder width="400" height="200" text="Big Text" fontSize="32" />
+
+## Common Use Cases
+
+### Profile Picture Placeholder
+
+```jsx
+<Placeholder 
+  width="80" 
+  height="80" 
+  text="User" 
+  background="#f3f4f6" 
+  color="#6b7280" 
+/>
+```
+
+<Placeholder width="80" height="80" text="User" background="#f3f4f6" color="#6b7280" />
+
+### Card Image Placeholder
+
+```jsx
+<Placeholder 
+  width="320" 
+  height="180" 
+  text="Card Image" 
+  background="#e5e7eb" 
+  color="#374151" 
+/>
+```
+
+<Placeholder width="320" height="180" text="Card Image" background="#e5e7eb" color="#374151" />
+
+### Banner Placeholder
+
+```jsx
+<Placeholder 
+  width="800" 
+  height="200" 
+  text="Banner Advertisement" 
+  background="#1f2937" 
+  color="#f9fafb" 
+/>
+```
+
+<Placeholder width="800" height="200" text="Banner Advertisement" background="#1f2937" color="#f9fafb" />
+
+## Props
+
+| Prop | Type | Default | Description |
+|------|------|---------|-------------|
+| `width` | `string \| number` | - | Width of the placeholder (required) |
+| `height` | `string \| number` | - | Height of the placeholder (required) |
+| `text` | `string` | `"{width}×{height}"` | Custom text to display |
+| `color` | `string` | `"#999"` | Text color (hex or named color) |
+| `background` | `string` | `"#ddd"` | Background color (hex or named color) |
+| `fontSize` | `string \| number` | Auto-calculated | Font size in pixels |
+| `className` | `string` | `""` | Additional CSS classes | 
